@@ -5,7 +5,7 @@
 @stop
 
 @section('contenido')
-<a href="" class="btn btn-success">Registar alumno</a>
+<a href="{{ url('/registrarAlumno') }}" class="btn btn-success">Registar alumno</a>
 <div class="table-responsive">
     <table class="table table-hover">
         <thead>
