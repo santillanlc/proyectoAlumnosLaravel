@@ -1,0 +1,1 @@
+<img width="100px" src="{{ asset('img/milogo.png') }}" alt="">

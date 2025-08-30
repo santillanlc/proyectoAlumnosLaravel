@@ -29,7 +29,9 @@
                     <td>{{ $alumno->sexo }}</td>
                     <td>{{ $alumno->especialidad }}</td>
                     <td>
+                        @if(Auth::user()->rol == 1)
                         <a href="{{ url('/editarAlumno') }}/{{ $alumno->id }}" class="btn btn-primary btn-sm">Editar</a>
+                        @endif
                         <a href="{{ url('/alumno') }}/{{ $alumno->id }}" class="btn btn-danger btn-sm">Eliminar</a>
                     </td>
                 </tr>
